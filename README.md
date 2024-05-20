@@ -89,8 +89,14 @@ if __name__ == "__main__":
 
 ```
 
+## UML Sequence Diagram
 ![alt text](image-1.png)
 
-
+1. Client: Initiates a POST request to /search endpoint with the JSON payload.
+2. Supplier Microservice: Receives the request and forwards it to the Search Controller.
+3. Search Controller: Processes the request, constructs a query, and sends it to the Google Custom Search API.
+4. Google Custom Search API: Returns search results to the Search Controller.
+5. Search Controller: Sends the response back to the Express Application.
+6. Express Application: Sends the JSON response containing the supplier links back to the Client.
 
 
