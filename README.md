@@ -96,7 +96,7 @@ if __name__ == "__main__":
 2. Supplier Microservice: Receives the request and forwards it to the Search Controller.
 3. Search Controller: Processes the request, constructs a query, and sends it to the Google Custom Search API.
 4. Google Custom Search API: Returns search results to the Search Controller.
-5. Search Controller: Sends the response back to the Express Application.
-6. Express Application: Sends the JSON response containing the supplier links back to the Client.
+5. Search Controller: Sends the response back to the microservice.
+6. Supplier Microservice: Sends the JSON response containing the supplier links back to the Client.
 
 
